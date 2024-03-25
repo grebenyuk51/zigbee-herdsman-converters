@@ -59,7 +59,7 @@ const definitions: Definition[] = [
                                     ID: 0x0a00,
                                     type: 0x30,
                                 },
-                                description: '',
+                                description: 'Operation method of the switch',
                                 access: 'ALL',
                                 entityCategory: 'config',
                                 zigbeeCommandOptions: {
@@ -83,13 +83,13 @@ const definitions: Definition[] = [
                                     ID: 0x0a01,
                                     type: 0x30,
                                 },
-                                description: '',
+                                description: 'Command to be generated when the switch moves between its two states',
                                 access: 'ALL',
                                 entityCategory: 'config',
                                 zigbeeCommandOptions: {
                                     manufacturerCode: 0x4c44,
                                 },
-                            }),
+                            }), 
                         );
                     }
 
