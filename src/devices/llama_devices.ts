@@ -40,7 +40,6 @@ const definitions: Definition[] = [
         ],
         extend: [
             modernExtend.temperature(),
-            modernExtend.humidity(),
             ...(
                 () => {
                     const feature: ModernExtend[] = [];
@@ -98,7 +97,7 @@ const definitions: Definition[] = [
             )(),
             modernExtend.deviceEndpoints({
                 endpoints: {'button_1': 1, 'button_2': 2, 'button_3': 3, 'button_4': 4},
-                multiEndpointSkip: ['battery', 'temperature', 'humidity'],
+                multiEndpointSkip: ['battery', 'temperature'],
             }),
         ],
     },
